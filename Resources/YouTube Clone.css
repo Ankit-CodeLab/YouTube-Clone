@@ -14,11 +14,13 @@ img {
 }
 
 nav {
-    position: sticky;
-    padding: 10px 2%;
+    padding: 5px 2%;
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background: rgb(36, 35, 35);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .nav-box {
@@ -47,7 +49,7 @@ nav {
     border: 1px solid rgb(87, 87, 87);
     border-radius: 50px 0px 0px 50px;
     background: none;
-    height: 25px;
+    height: 30px;
 }
 
 .nav-mid button {
@@ -62,4 +64,65 @@ nav {
 
 .nav-right {
     width: 30%;
+    display: flex;
+    justify-content: right;
 }
+
+.nav-right a img {
+    width: 35px;
+    margin-right: 40px;
+    border: 2px solid rgb(87, 87, 87);
+    margin-top: 2px;
+    border-radius: 100%;
+}
+
+
+.nav-right button {
+    width: 40px;
+    height: 40px;
+    margin-top: 2px;
+    margin-right: 10px;
+    border: 2px solid rgb(87, 87, 87);
+    border-radius: 100px;
+    background: none;
+}
+
+/*-----------------------------------------------------Side Bar----------------------------------------------------*/
+
+.sidebar {
+    width: 15%;
+    height: 100vh;
+    background-color: rgb(36, 35, 35);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    padding: 1%;
+    padding-top: 80px;
+}
+
+.sidebar-links a{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Teko', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sidebar-links a i {
+    margin-right: 20px;
+}
+
+.sidebar-links a:hover {
+    background-color: rgb(69, 68, 68);
+    border: 2px;
+    border-radius: 10px;
+}
+
+/* .sidebar-links a p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+} */
