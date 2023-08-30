@@ -1,6 +1,8 @@
-var counter = 0;
-function countClicks()
-{
-counter = counter + 1;
-document.getElementById("num_of_clicks").innerHTML = counter + " views &bull; 2 minutes";
+var menuicon = document.querySelector(".menu")
+var sidebar = document.querySelector(".sidebar")
+var mainbox = document.querySelector(".main-box")
+
+menuicon.onclick = function(){
+    sidebar.classList.toggle("hidden-sidebar")
+    mainbox.classList.toggle("large-main-box")
 }
