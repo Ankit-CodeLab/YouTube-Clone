@@ -30,6 +30,8 @@ nav {
 
 .nav-left {
     width: 30%;
+    display: flex;
+    justify-content: left;
 }
 
 .nav-left a img {
@@ -47,7 +49,7 @@ nav {
 .nav-mid input {
     color: white;
     width: 60%;
-    border: 1px solid rgb(87, 87, 87);
+    border: 2px solid rgb(87, 87, 87);
     border-radius: 50px 0px 0px 50px;
     background: none;
     height: 30px;
@@ -56,9 +58,9 @@ nav {
 .nav-mid button {
     width: 40px;
     border: 0px;
-    border-top: 1px solid rgb(87, 87, 87);
-    border-bottom: 1px solid rgb(87, 87, 87);
-    border-right: 1px solid rgb(87, 87, 87);
+    border-top: 2px solid rgb(87, 87, 87);
+    border-bottom: 2px solid rgb(87, 87, 87);
+    border-right: 2px solid rgb(87, 87, 87);
     border-radius: 0px 50px 50px 0px;
     background: none;
 }
@@ -67,6 +69,10 @@ nav {
     width: 30%;
     display: flex;
     justify-content: right;
+}
+
+.small-search {
+    display: none;
 }
 
 .nav-right a img {
@@ -86,6 +92,15 @@ nav {
     border: 2px solid rgb(87, 87, 87);
     border-radius: 100px;
     background: none;
+    cursor: pointer;
+}
+
+.menu {
+    margin-top: 5px;
+}
+
+.hidden-sidebar {
+    display: none;
 }
 
 /*-----------------------------------------------------Side Bar----------------------------------------------------*/
@@ -99,6 +114,11 @@ nav {
     top: 0;
     padding: 1%;
     padding-top: 70px;
+    overflow-y: scroll;
+}
+
+div::-webkit-scrollbar {
+    display: none;
 }
 
 .sidebar-links a{
@@ -152,14 +172,22 @@ nav {
 
 /*------------------------------------------------------Main-------------------------------------------------------*/
 
+.main-box {
+    margin-top: 15px;
+    margin-left: 250px;
+    margin-right: 20px;
+}
+
+.large-main-box {
+    margin-left: 20px;
+}
+
+
 .list-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     grid-column-gap: 16px;
     grid-row-gap: 15px;
-    margin-top: 15px;
-    margin-left: 250px;
-    margin-right: 20px;
 }
 
 .video-list .video {
@@ -204,4 +232,63 @@ nav {
     font-size: 13px;
     display: block;
     margin-bottom: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+
+    .sidebar {
+        display: none;  
+    }
+
+    .hidden-sidebar {
+        display: block;
+        width: 45%;
+    }
+
+    .main-box {
+        margin-top: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .nav-right a img {
+        margin-right: 5px;
+    }
+
+    .nav-right button {
+        margin-right: 5px;
+    }
+
+
+
+
+
+}
+
+@media (max-width: 600px) {
+
+    .small-search {
+        margin-top: 2px;
+        display: block;
+        font-size: 19px;
+        padding: 9px;
+        border: 2px solid rgb(87, 87, 87);
+        border-radius: 50%;
+        height: 19px;
+        margin-right: 7px;    
+    }
+
+    .nav-mid input {
+        display: none;
+    } 
+
+    .nav-mid button {
+        display: none;
+   }
+
+   .nav-right {
+    width: 50%;
+   }
+
 }
