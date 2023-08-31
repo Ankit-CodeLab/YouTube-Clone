@@ -23,28 +23,34 @@
 
         <div class="box">
 
-            <div class="nav-left">
+            <div class="nav-left" id="hide">
 
                 <span class="menu"><i class="bi bi-list" style="color: white; margin-top: 10px; margin-right: 5px; cursor: pointer; font-size: 20px;"></i></span>
                 <a href="YouTube Clone.html"><img src="Resources/Images/Logo.png" alt="Logo"></a>
 
             </div>
 
-            <div class="nav-mid">
+            <div id="close">
 
-                <input type="text" placeholder="  Search">
-
-                <button><i class="bi bi-search" style="color: rgb(255, 255, 255);"></i></button>
+                <button onclick="show()" id="search-close"><i class="bi bi-x" style="color: white; font-size: 20px;"></i></button>
 
             </div>
 
-            <div class="nav-right">
+            <div class="nav-mid" id="show">
 
-                <div class="small-search"><i class="bi bi-search" style="color: rgb(255, 255, 255);"></i></div>
+                <input id="show2" type="text" placeholder="Search">
 
-                <button><i class="bi bi-bell" style="color: rgb(255, 255, 255); font-size: 20px;"></i></button>
+                <button id="show3"><i class="bi bi-search" style="color: rgb(255, 255, 255);"></i></button>
 
-                <a href="login.html"><img src="Resources/Images/login-logo.jpg" alt="Login"></a>
+            </div>
+
+            <div class="nav-right" id="hide2">
+
+                <button onclick="hide()" class="small-search"><i class="bi bi-search" style="color: rgb(255, 255, 255);"></i></button>
+
+                <button ><i class="bi bi-bell" style="color: rgb(255, 255, 255); font-size: 20px;"></i></button>
+
+                <a id="hide3" href="login.html"><img src="Resources/Images/login-logo.jpg" alt="Login"></a>
 
             </div>
 
