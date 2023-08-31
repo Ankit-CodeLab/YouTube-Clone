@@ -71,3 +71,17 @@ var close2 = document.getElementById("close");
         close2.style.display = "block";
     }
 }
+
+
+
+const searchInput = document.getElementById('show2');
+const searchButton = document.getElementById('show3');
+
+searchButton.addEventListener('click', () => {
+  const searchTerm = searchInput.value;
+  const selectedOption = document.querySelector(`#options option[value="${searchTerm}"]`);
+  if (selectedOption) {
+    const link = selectedOption.getAttribute('data-link');
+    window.location.href = link;
+  }
+});
