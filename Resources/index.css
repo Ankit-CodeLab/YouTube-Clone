@@ -49,10 +49,29 @@ nav {
 .nav-mid input {
     color: white;
     width: 60%;
+    padding-left: 8px;
     border: 2px solid rgb(87, 87, 87);
     border-radius: 50px 0px 0px 50px;
     background: none;
     height: 30px;
+}
+
+#show {
+    width: 90%;
+}
+
+#close {
+    width: 10%;
+    display: none;
+}
+
+#search-close {
+    width: 37px;
+    height: 37px;
+    border: 2px solid rgb(87, 87, 87);
+    border-radius: 100px;
+    background: none;
+    cursor: pointer;
 }
 
 .nav-mid button {
@@ -260,10 +279,6 @@ div::-webkit-scrollbar {
         margin-right: 5px;
     }
 
-
-
-
-
 }
 
 @media (max-width: 600px) {
@@ -288,7 +303,7 @@ div::-webkit-scrollbar {
    }
 
    .nav-right {
-    width: 50%;
+    width: 70%;
    }
 
 }
