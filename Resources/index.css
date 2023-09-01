@@ -82,6 +82,7 @@ nav {
     border-right: 2px solid rgb(87, 87, 87);
     border-radius: 0px 50px 50px 0px;
     background: none;
+    cursor: pointer;
 }
 
 .nav-right {
@@ -132,7 +133,7 @@ nav {
     position: fixed;
     top: 0;
     padding: 1%;
-    padding-top: 70px;
+    padding-top: 35px;
     overflow-y: scroll;
 }
 
@@ -187,6 +188,19 @@ div::-webkit-scrollbar {
     font-size: 15px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+#creator {
+    color: rgb(153, 153, 153);
+    padding: 0px;
+    margin: 0px;
+    font-size: 13px;
+    font-family: monospace;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
 }
 
 /*------------------------------------------------------Main-------------------------------------------------------*/
@@ -262,7 +276,7 @@ div::-webkit-scrollbar {
 
     .hidden-sidebar {
         display: block;
-        width: 45%;
+        width: 35%;
     }
 
     .main-box {
@@ -305,5 +319,10 @@ div::-webkit-scrollbar {
    .nav-right {
     width: 70%;
    }
+
+   .hidden-sidebar {
+    display: block;
+    width: 60%;
+}
 
 }
