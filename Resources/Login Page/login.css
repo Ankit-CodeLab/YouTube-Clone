@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url('Resources/Images/login.jpg') no-repeat;
+    background: url('YouTube-Clone/Resources/Images/login-bg.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
