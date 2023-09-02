@@ -93,17 +93,9 @@ searchButton.addEventListener('click', () => {
 
 /*--------------------------------------------------Notifications--------------------------------------------------*/
 
-var box = document.getElementById('notifi-box')
-var down = false
+var bell = document.querySelector(".bell")
+var box = document.querySelector(".bell-box")
 
-function togglenotifi() {
-    if(down) {
-        box.style.height = '0px';
-        box.style.opacity = 0;
-        down = false;
-    } else {
-        box.style.height = 'auto';
-        box.style.opacity = 1;
-        down = true;
+    bell.onclick = function() {
+        box.classList.toggle("hidden-bell")
     }
-}
