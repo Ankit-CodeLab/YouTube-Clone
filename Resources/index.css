@@ -118,9 +118,8 @@ nav {
 
 .bell-box {
     right: 170px;
-    height: 0px;
-    opacity: 0;
-    display: block;
+    height: auto;
+    display: none;
     width: 400px;
     position: absolute;
     background-color: rgb(34, 34, 34);
@@ -170,6 +169,10 @@ nav {
     padding-left: 10px;
     color: white;
     font-family: 'Teko', sans-serif;
+}
+
+.hidden-bell {
+    display: block;
 }
 
 .menu {
@@ -258,8 +261,33 @@ div::-webkit-scrollbar {
 
 /*------------------------------------------------------Main-------------------------------------------------------*/
 
+.categories {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.categories a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: rgb(36, 35, 35);
+    padding: 5px 10px 5px 10px;
+    font-family: 'Teko', sans-serif;
+    font-size: 13px;
+    border-radius: 05px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.categories .active {
+    background-color: white;
+    color: black;
+}
+
 .main-box {
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: 250px;
     margin-right: 20px;
 }
@@ -380,6 +408,10 @@ div::-webkit-scrollbar {
     width: 278px;
     right: 102px;
 }
+
+    .categories {
+        justify-content: left;
+    }
 
 }
 
