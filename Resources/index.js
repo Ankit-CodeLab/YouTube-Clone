@@ -90,3 +90,20 @@ searchButton.addEventListener('click', () => {
     window.location.href = link;
   }
 });
+
+/*--------------------------------------------------Notifications--------------------------------------------------*/
+
+var box = document.getElementById('notifi-box')
+var down = false
+
+function togglenotifi() {
+    if(down) {
+        box.style.height = '0px';
+        box.style.opacity = 0;
+        down = false;
+    } else {
+        box.style.height = 'auto';
+        box.style.opacity = 1;
+        down = true;
+    }
+}
