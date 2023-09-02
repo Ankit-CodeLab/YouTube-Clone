@@ -422,7 +422,7 @@ div::-webkit-scrollbar {
         right: 0px;
     }
 
-    #bell {
+    .bell {
         z-index: 12;
     }
 
