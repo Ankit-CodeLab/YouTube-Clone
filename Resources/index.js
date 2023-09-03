@@ -99,3 +99,95 @@ var box = document.querySelector(".bell-box")
     bell.onclick = function() {
         box.classList.toggle("hidden-bell")
     }
+
+/*-------------------------------------------------------History---------------------------------------------------*/
+
+function hidehistory() {
+
+    var History = document.getElementById('history');
+    var hidet = document.getElementById('titlehide');
+    var showt = document.getElementById('No-History');
+    var hideb = document.getElementById('history-hide');
+
+    if(History.style.display === "none") {
+        History.style.display = "flex";
+        hidet.style.display = "block";
+        hideb.style.display = "block";
+        showt.style.display = "none";
+    } else {
+        History.style.display = "none";
+        hidet.style.display = "none";
+        hideb.style.display = "none";
+        showt.style.display = "block";
+    }
+
+}
+
+/*------------------------------------------------------Unsubscribe------------------------------------------------*/
+
+function unsubs1() {
+
+    var chl1 = document.getElementById('subs-channel-1');
+
+    if(chl1.style.display === "none") {
+        chl1.style.display = "flex";
+    } else {
+        chl1.style.display = "none";
+    }
+    
+}
+function unsubs2() {
+
+    var chl1 = document.getElementById('subs-channel-2');
+
+    if(chl1.style.display === "none") {
+        chl1.style.display = "flex";
+    } else {
+        chl1.style.display = "none";
+    }
+    
+}
+function unsubs3() {
+
+    var chl1 = document.getElementById('subs-channel-3');
+
+    if(chl1.style.display === "none") {
+        chl1.style.display = "flex";
+    } else {
+        chl1.style.display = "none";
+    }
+    
+}
+function unsubs4() {
+
+    var chl1 = document.getElementById('subs-channel-4');
+
+    if(chl1.style.display === "none") {
+        chl1.style.display = "flex";
+    } else {
+        chl1.style.display = "none";
+    }
+    
+}
+function unsubs5() {
+
+    var chl1 = document.getElementById('subs-channel-5');
+
+    if(chl1.style.display === "none") {
+        chl1.style.display = "flex";
+    } else {
+        chl1.style.display = "none";
+    }
+    
+}
+function unsubs6() {
+
+    var chl1 = document.getElementById('subs-channel-6');
+
+    if(chl1.style.display === "none") {
+        chl1.style.display = "flex";
+    } else {
+        chl1.style.display = "none";
+    }
+    
+}
