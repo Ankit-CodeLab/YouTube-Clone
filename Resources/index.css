@@ -479,7 +479,7 @@ div::-webkit-scrollbar {
     
     .bell-box {
         width: 278px;
-        right: 0px;
+        right: 10px;
     }
 
     .bell {
