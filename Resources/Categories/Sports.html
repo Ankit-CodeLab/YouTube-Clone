@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ANKIT">
+
+    <link rel="stylesheet" href="../index.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <title>Sports - YouTube Clone</title>
+
+</head>
+<body>
+    
+    <nav>
+
+        <div class="box">
+
+            <div class="nav-left" id="hide">
+
+                <span class="menu"><i class="bi bi-list" style="color: white; margin-top: 10px; margin-right: 5px; cursor: pointer; font-size: 20px;"></i></span>
+                <a href="../../index.html"><img src="../Images/Logo.png" alt="Logo"></a>
+
+            </div>
+
+            <div id="close">
+
+                <button onclick="show()" id="search-close"><i class="bi bi-x" style="color: white; font-size: 20px;"></i></button>
+
+            </div>
+
+            <div class="nav-mid" id="show">
+
+                <input id="show2" type="text" placeholder="Search" list="options">
+
+                <datalist id="options">
+                    <option value="$1 vs $1,000,000 Hotel Room!" data-link="https://youtu.be/iogcY_4xGjo?si=6lgY2H3haszZefXe">
+                    <option value="Can ACP Solve This Mystery?" data-link="https://youtu.be/X54EvXaxpRw?si=fZe3ZNNzyxhHbf06">
+                    <option value="Life Is Strange  Gameplay Part - 1" data-link="https://youtu.be/WXF7NDYBOP4?si=D7NJ5_DX2I5ELMj2">
+                    <option value="Ant Man In Minecraft" data-link="https://youtu.be/ByVGf_OHrkY?si=3F9YkqYzOrAGG7kK">
+                    <option value="1 VS 4 In BGMI" data-link="https://youtu.be/J1lHkTKgyuo?si=n5fHzG2w2SiUdV8a">
+                    <option value="The Bad Baby Is Back" data-link="https://youtu.be/GqVKoUzicow?si=ZXlJ0qbVfSiQAg8A">
+                    <option value="India's First Friveless Car" data-link="https://youtu.be/vLZ1QyB9BNk?si=JUfGSnbcADKy08cY">
+                    <option value="The Survivor Games" data-link="https://youtu.be/kd-ABokZCkA?si=QcTcT6Z_TLWSyd_4">
+                </datalist>
+
+                <button id="show3"><i class="bi bi-search" style="color: rgb(255, 255, 255);"></i></button>
+
+            </div>
+
+            <div class="nav-right" id="hide2">
+
+                <button onclick="hide()" class="small-search"><i class="bi bi-search" style="color: rgb(255, 255, 255);"></i></button>
+
+                <div class="bell-box">
+                
+                    <div class="head">
+                        
+                        <p>Notifications</p>
+        
+                    </div>
+                    <hr>
+                    <div class="notifications-list">
+                    
+                        <a href="https://youtu.be/WXF7NDYBOP4?si=D7NJ5_DX2I5ELMj2"><img class="noti-img1" src="../Images/Channel1.png" alt="Channel"><p>All Types Content Creator Uploaded: Life Is Strange Part - 1</p><img class="noti-img2" src="../Images/Video3.jpg" alt="Video"></a>
+
+                        <a href="https://youtu.be/X54EvXaxpRw?si=fZe3ZNNzyxhHbf06"><img class="noti-img1" src="../Images/Channel4.jpg" alt="Channel"><p>Mythpat Uploaded: Can ACP Solve This Mystery?</p><img class="noti-img2" src="../Images/Video2.jpg" alt="Video"></a>
+
+                        <a href="https://youtu.be/vLZ1QyB9BNk?si=JUfGSnbcADKy08cY"><img class="noti-img1" src="../Images/Channel7.jpg" alt="Channel"><p>Tech Burner Uploaded: India's First Driverless Car</p><img class="noti-img2" src="../Images/Video7.jpg" alt="Video"></a>
+
+                        <a href=""><img class="noti-img1" src="../Images/Channel1.png" alt="Channel"><p>ATCC Uploaded: Life Is Strange Part - 1</p><img class="noti-img2" src="../Images/Video3.jpg" alt="Video"></a>
+        
+                    </div>
+        
+                </div>
+
+                <button class="bell"><i class="bi bi-bell" style="color: rgb(255, 255, 255); font-size: 20px;"></i></button>
+
+                <a id="hide3" href="../Login Page/login.html"><img src="../Images/login.png" alt="Logout"  id="logout"></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </nav>
+    
+<!-- --------------------------------------------------Side Bar-------------------------------------------------- -->
+
+    <div class="sidebar">
+
+        <div class="sidebar-links">
+            <p id="creator" style="padding-top: 0px; padding-bottom: 15px;">Created By ~ ANKIT</p>
+            <a href="../../index.html" class="active"><i class="bi bi-house" style="color: white;"></i><p>Home</p></a>
+            <a href="../Library.html"><i class="bi bi-caret-right-square" style="color: white;"></i><p>Library</p></a>
+            <a href="../History.html"><i class="bi bi-clock-history" style="color: white;"></i><p>History</p></a>
+            <a href="../Watch-later.html"><i class="bi bi-clock" style="color: white;"></i><p>Watch Later</p></a>
+            <hr>
+            <a href="../Subscriptions.html"><i class="bi bi-collection-play" style="color: white;"></i><p>Subscriptions</p></a>
+
+            <div class="channels">
+
+            <a href="https://www.youtube.com/@AllTypesContentCreator"><img src="../Images/Channel1.png" alt="channel"><p>ATCC</p></a>
+            <a href="https://www.youtube.com/@airxpanda808"><img src="../Images/Channel2.jpg" alt="channel"><p>AirxPanda</p></a>
+            <a href="https://www.youtube.com/@strangegamerr"><img src="../Images/Channel3.jpg" alt="channel"><p>Strange Gamer</p></a>
+            <a href="https://www.youtube.com/@Mythpat"><img src="../Images/Channel4.jpg" alt="channel"><p>Mythpat</p></a>
+            <a href="https://www.youtube.com/@MrBeast"><img src="../Images/Channel5.jpg" alt="channel"><p>MrBeast</p></a>
+
+            <a href="../Subscription.html"><i class="bi bi-chevron-down" style="color: white;"></i><p style="padding-left: 0px;">View More</p></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<!-- -----------------------------------------------------------Main--------------------------------------------- -->
+
+    <div class="main-box">
+
+        <div class="categories">
+
+            <a href="../../index.html">All</a>
+            <a href="News.html">News</a>
+            <a href="Sports.html" class="active">Sports</a>
+            <a href="Gaming.html">Gaming</a>
+            <a href="Movies.html">Movies</a>
+            <a href="Trending.html">Trending</a>
+            <a href="Entertainment.html">Entertainment</a>
+
+        </div>
+
+        <div class="list-box">
+
+            <div class="video-list">
+
+                <a href="https://youtu.be/12Ov-N41xfk?si=yezJXiuBEUXW6K80" class="video"><img src="../Images/Video17.jpg" alt="Video" class="video"></a>
+
+                <div class="box">
+
+                    <a href="https://www.youtube.com/@royalchallengersbangalore"><img src="../Images/channel14.jpg" alt="Channel" class="video"></a>
+
+                    <div class="video-info">
+
+                        <a href="https://youtu.be/12Ov-N41xfk?si=yezJXiuBEUXW6K80">West India Vs India: Test Series</a>
+                        <a href="https://www.youtube.com/@royalchallengersbangalore"><p>Royal Challengers Bangalore</p></a>
+                        <p id="num_of_clicks">12k views &bull; 1 month ago</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="video-list">
+
+                <a href="https://youtu.be/0ZdoHE1C-to?si=t8NKuy3jLJqrcTQ0" class="video"><img src="../Images/Video18.jpg" alt="Video" class="video"></a>
+
+                <div class="box">
+
+                    <a href="https://www.youtube.com/@SportsTodayofficial"><img src="../Images/channel15.jpg" alt="Channel" class="video"></a>
+
+                    <div class="video-info">
+
+                        <a href="https://youtu.be/0ZdoHE1C-to?si=t8NKuy3jLJqrcTQ0">India's New CHESS SENSATION</a>
+                        <a href="https://www.youtube.com/@SportsTodayofficial"><p>Sport Today</p></a>
+                        <p id="num_of_clicks">12k views &bull; 12 days ago</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="video-list">
+
+                <a href="https://youtu.be/6_AuiO3dIIE?si=6Y7D3h7CZneRBs6W" class="video"><img src="../Images/Video19.jpg    " alt="Video" class="video"></a>
+
+                <div class="box">
+
+                    <a href="https://www.youtube.com/@SportsTodayofficial"><img src="../Images/channel15.jpg" alt="Channel" class="video"></a>
+
+                    <div class="video-info">
+
+                        <a href="https://youtu.be/6_AuiO3dIIE?si=6Y7D3h7CZneRBs6W">Will This Be India's Squad For The Asia Cup?</a>
+                        <a href="https://www.youtube.com/@SportsTodayofficial"><p>Sports Today</p></a>
+                        <p id="num_of_clicks">9k views &bull; 2 days ago</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="video-list">
+
+                <a href="https://youtu.be/jOIyRaveCII?si=hsKM3pPTlFMfG-u6" class="video"><img src="../Images/Video20.jpg" alt="Video" class="video"></a>
+
+                <div class="box">
+
+                    <a href="https://www.youtube.com/@SportsTak"><img src="../Images/channel16.jpg" alt="Channel" class="video"></a>
+
+                    <div class="video-info">
+
+                        <a href="https://youtu.be/jOIyRaveCII?si=hsKM3pPTlFMfG-u6">Ahead Of IND-PAK Clash Shadab Khan Recals Kohli's MCG Masterclass</a>
+                        <a href="https://www.youtube.com/@SportsTak"><p>Sports Tak</p></a>
+                        <p id="num_of_clicks">15k views &bull; 2 days ago</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="video-list">
+
+                <a href="https://youtu.be/fF-Z1VI6iLI?si=3qqOL4a-xQVKOpbG" class="video"><img src="../Images/Video22.jpg" alt="Video" class="video"></a>
+
+                <div class="box">
+
+                    <a href="https://www.youtube.com/@REBOUNDfootball"><img src="../Images/channel17.jpg" alt="Channel" class="video"></a>
+
+                    <div class="video-info">
+
+                        <a href="https://youtu.be/fF-Z1VI6iLI?si=3qqOL4a-xQVKOpbG">1 in 1,000,000 Sports Moments..</a>
+                        <a href="https://www.youtube.com/@REBOUNDfootball"><p>REBOUND football</p></a>
+                        <p id="num_of_clicks">692k views &bull; 2 months ago</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="video-list">
+
+                <a href="https://youtu.be/9b-mblOMbc8?si=0jk3GS0PMRMw5ej7" class="video"><img src="../Images/Video24.jpg" alt="Video" class="video"></a>
+
+                <div class="box">
+
+                    <a href="https://www.youtube.com/@LiverpoolFC"><img src="../Images/channel18.jpg" alt="Channel" class="video"></a>
+
+                    <div class="video-info">
+
+                        <a href="https://youtu.be/9b-mblOMbc8?si=0jk3GS0PMRMw5ej7">HIGHLIGHTS: Szoboszlai scores his FIRST Premier League goal!</a>
+                        <a href="https://www.youtube.com/@LiverpoolFC"><p>Liverpool FC</p></a>
+                        <p id="num_of_clicks">1M views &bull; 10 hour ago</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="video-list">
+
+                <a href="https://youtu.be/1vZAol6a7cM?si=bN5gzw4i9VHU787T" class="video"><img src="../Images/Video21.jpg" alt="Video" class="video"></a>
+
+                <div class="box">
+
+                    <a href="https://www.youtube.com/@SportsTak"><img src="../Images/channel16.jpg" alt="Channel" class="video"></a>
+
+                    <div class="video-info">
+
+                        <a href="https://youtu.be/1vZAol6a7cM?si=bN5gzw4i9VHU787T">India's First Driverless Car</a>
+                        <a href="https://www.youtube.com/@SportsTak"><p>Sports Tak</p></a>
+                        <p id="num_of_clicks">12k views &bull; 3 days ago</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="video-list">
+
+                <a href="https://youtu.be/61B8b-m5c6I?si=HHuFc2GNMaWrr7xJ" class="video"><img src="../Images/Video23.jpg" alt="Video" class="video"></a>
+
+                <div class="box">
+
+                    <a href="https://www.youtube.com/@REBOUNDfootball"><img src="../Images/channel17.jpg" alt="Channel" class="video"></a>
+
+                    <div class="video-info">
+
+                        <a href="https://youtu.be/61B8b-m5c6I?si=HHuFc2GNMaWrr7xJ">NFL Records That'll NEVER Be Broken..</a>
+                        <a href="https://www.youtube.com/@REBOUNDfootball"><p>REBOUND football</p></a>
+                        <p id="num_of_clicks">206k views &bull; 9 days ago</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <p id="creator">Created By ~ ANKIT</p>
+        
+    </div>
+
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+
+    <script src="../index.js"></script>
+
+</body>
+</html>
