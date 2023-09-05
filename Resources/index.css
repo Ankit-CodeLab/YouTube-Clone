@@ -51,10 +51,20 @@ nav {
     color: white;
     width: 60%;
     padding-left: 8px;
-    border: 2px solid rgb(87, 87, 87);
+    border-right: 1px solid rgb(87, 87, 87);
+    border-left: 2px solid rgb(87, 87, 87);
+    border-top: 2px solid rgb(87, 87, 87);
+    border-bottom: 2px solid rgb(87, 87, 87);
     border-radius: 50px 0px 0px 50px;
     background: none;
     height: 30px;
+}
+
+.nav-mid input:hover {
+    border-right: 2px solid rgba(224, 224, 224, 0.786);
+    border-left: 2px solid rgba(224, 224, 224, 0.786);
+    border-top: 2px solid rgba(224, 224, 224, 0.786);
+    border-bottom: 2px solid rgba(224, 224, 224, 0.786);
 }
 
 #show {
@@ -78,12 +88,20 @@ nav {
 .nav-mid button {
     width: 40px;
     border: 0px;
+    border-left: 1px solid rgb(87, 87, 87);
     border-top: 2px solid rgb(87, 87, 87);
     border-bottom: 2px solid rgb(87, 87, 87);
     border-right: 2px solid rgb(87, 87, 87);
     border-radius: 0px 50px 50px 0px;
     background: none;
     cursor: pointer;
+}
+
+.nav-mid button:hover {
+    border-left: 2px solid rgba(224, 224, 224, 0.786);
+    border-top: 2px solid rgba(224, 224, 224, 0.786);
+    border-bottom: 2px solid rgba(224, 224, 224, 0.786);
+    border-right: 2px solid rgba(224, 224, 224, 0.786);
 }
 
 .nav-right {
@@ -115,6 +133,14 @@ nav {
     border-radius: 100px;
     background: none;
     cursor: pointer;
+}
+
+.nav-right button:hover {
+    border: 2px solid rgba(224, 224, 224, 0.786);
+}
+
+#hide3 img:hover {
+    border: 2px solid rgba(224, 224, 224, 0.786);
 }
 
 .bell-box {
@@ -282,6 +308,10 @@ div::-webkit-scrollbar {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.categories a:hover {
+    background-color: rgb(69, 68, 68);
+}
+
 .categories .active {
     background-color: white;
     color: black;
@@ -304,6 +334,14 @@ div::-webkit-scrollbar {
     grid-column-gap: 16px;
     grid-row-gap: 15px;
 }
+
+.list-box a img {
+    transition: 0.5s;
+}
+
+.list-box a img:hover {
+    transform: scale(1.02);
+} 
 
 .video-list .video {
     width: 100%;
@@ -332,6 +370,14 @@ div::-webkit-scrollbar {
 .video-info a p{
     font-family: 'Teko', sans-serif;
     margin-top: 0px;
+}
+
+.video-info a:hover {
+    color: rgba(255, 255, 255, 0.849);
+}
+
+.video-info a p:hover {
+    color: rgba(255, 255, 255, 0.849);
 }
 
 #num_of_clicks {
