@@ -20,5 +20,3 @@ The YouTube Clone project features a comprehensive replica of the YouTube interf
 - **HTML**: Structuring the web pages.
 - **CSS**: Styling the application for a visually appealing layout.
 - **JavaScript**: Enhancing interactivity, such as search functionality and notifications.
-- **Bootstrap Icons**: For modern and responsive icons.
-- **Google Fonts**: To include custom fonts for a refined text appearance.
